@@ -1,1 +1,40 @@
-body {background:blue}
+.box {
+	border: 1px solid black;
+	padding: 20px;
+	  border-radius: 5px;
+
+
+}
+
+.margin{
+	margin: 15px;
+}
+
+#center{
+text-align: center;
+font-family:Impact;
+}
+
+html {
+	background-image: url("http://www.publicdomainpictures.net/pictures/60000/velka/elephant-silhouette-at-sunset.jpg");
+}
+
+body {
+  padding: 20px 30px;
+  border-radius: 5px;
+  background-color: white;
+  margin: 30px auto;
+  max-width: 960px;
+  font-size: 1em;
+
+}
+
+a:visited {
+    color: green;
+}
+
+img {
+  width: 100%;
+  border-radius: 5px;
+
+}
