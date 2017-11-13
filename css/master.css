@@ -1,0 +1,136 @@
+/*
+general
+*/
+body{
+	--light: #fdfdfd;
+	--medium: #505b69;
+	--dark: #263547;
+	--red: #fd4345;
+}
+body{
+	background: black;
+	font-family: 'Roboto', sans-serif;
+	font-size: 0.85em;
+	margin: 3em;
+	letter-spacing: .05em;
+	color: var(--dark)
+}
+/*
+resume
+*/
+.resume {
+	animation: fadein 5s;
+	margin: 0 auto;
+	width: 850px;
+	height: 1100px;
+	display: grid;
+	grid-template: repeat(4, 1fr);
+	background: whitesmoke;
+}
+article, aside{
+	padding: 0 1.5em;
+}
+/*
+header
+*/
+header{
+	color: var(--light);
+	padding: 3em;
+	grid-row: 1;
+	grid-column: 1/4;
+	background: var(--dark);
+	text-transform: uppercase;
+	border-right: 3px solid var(--light);
+}
+header h1{
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: .3em;
+	font-size: 2.3em;
+	margin: 0;
+}
+header h2{
+	font-family: 'Montserrat Alternates', sans-serif;
+	color: var(--red);
+	font-size: 1.3em;
+	letter-spacing: .2em;
+	margin: 0;
+}
+.contacts p{
+	margin: 0;
+}
+aside{
+	color: var(--light);
+	background: var(--medium);
+	max-width: 220px;
+}
+.contacts, .memberships, .qualifications{
+	grid-column: 4;
+}
+.contacts{
+	grid-row: 1;
+	font-size: 1.1em;
+}
+.qualifications{
+	grid-row: 2/4;
+}
+.memberships{
+	grid-row: 4/5;
+}
+.main{
+	grid-row: 2/5;
+	grid-column: 1/4;
+}
+.contacts ul{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+.qualifications ul, .contacts ul{
+	padding: 0;
+	list-style: none;
+}
+.qualifications li{
+	display: inline;
+	padding: 3px;
+	background: var(--dark);
+	border-radius: 3px;
+	line-height: 200%;
+}
+.main h3, aside h3{
+	color: var(--red);
+	font-size: 1.3em;
+}
+.main h4, .qualifications h4, .education h4{
+	margin-bottom: 0;
+}
+.contacts a{
+	font-size: 3em;
+	color: var(--light);
+	text-decoration: none;
+}
+.contacts a:hover{
+	color: var(--red);
+}
+article section:first-child{
+	padding-top: 1em;
+}
+.main p{
+	margin-top: 0;
+}
+@media print {
+  body, body * {
+    visibility: hidden;
+  }
+  body .resume, body .resume * {
+    visibility: visible;
+  }
+  body .resume {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+
+@keyframes fadein {
+  from {opacity:0;}
+  to {opacity:1;}
+}
