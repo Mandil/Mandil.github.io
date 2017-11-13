@@ -102,8 +102,10 @@ aside{
 .main h4, .qualifications h4, .education h4{
 	margin-bottom: 0;
 }
-.contacts a{
+.contacts li a{
 	font-size: 3em;
+}
+.contacts a{
 	color: var(--light);
 	text-decoration: none;
 }
