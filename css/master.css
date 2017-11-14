@@ -47,7 +47,7 @@ h4{
 	margin: 0 auto;
 	background: var(--light);
 	display: grid;
-	grid-template-columns: 625px 225px;
+	grid-template-columns: 610px 240px;
 }
 header, address, aside, main{
 	padding: 1.5em;
