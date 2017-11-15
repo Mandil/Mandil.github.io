@@ -134,7 +134,7 @@ aside .qualifications li{
     top: 0;
   }
 }
-/*@keyframes fadein {
+@keyframes fadein {
   from {opacity:0;}
   to {opacity:1;}
-}*/
+}
