@@ -25,7 +25,8 @@ a{
 	text-decoration: none;
 }
 i.fa{
-	font-size: 2.5em;
+	font-size: 1.8em;
+	padding-right: .5em;
 }
 h3{
 	color: var(--red);
@@ -66,6 +67,7 @@ header{
 address{
 	grid-row: 1;
 	grid-column: 2;
+	font-size: 1em;
 }
 aside{
 	grid-row: 2;
@@ -97,12 +99,6 @@ header h2{
 }
 address, aside{
 	background: var(--medium);
-}
-address .social{
-	padding-bottom: 1em;
-}
-address .social li:first-child{
-	padding-right: 2em;
 }
 address a:hover{
 	color: var(--dark);
