@@ -135,7 +135,7 @@ i.fa{
 		margin-top: 0;
 	}
 	.resume{
-		animation: fadein 5s;
+		animation: fadein 2.5s;
 		font-size: .7em;
 		width: 850px;
 		height: 1100px;
@@ -192,10 +192,7 @@ i.fa{
 	}
 }
 
-@media print and (color){
-	*{
-		print-color-adjust: exact;
-	}
+@media print{
 	body {
 		visibility: hidden;
 	}
