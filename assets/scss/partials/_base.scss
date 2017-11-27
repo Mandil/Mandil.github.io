@@ -1,0 +1,137 @@
+/* general */
+body{
+	font-family: $main-font;
+	background: $body-bg;
+	letter-spacing: 1px;
+	margin: 0;
+	line-height: 125%;
+	color: $dark;
+	@include breakpoint (850px){
+		padding-top: 5em;
+	}
+	@include breakpoint (print){
+		visibility: hidden;
+	}
+}
+p{
+	@include breakpoint (850px){
+		margin-top: 0;
+	}
+	@include breakpoint (print){
+		margin-top: 0;
+	}
+}
+section{
+	padding: 3em;
+	background: $light;
+}
+aside{
+	padding: 3em;
+	background: $medium;
+	color: $light;
+	@include breakpoint (print){
+		background: $medium2;
+	}
+}
+h3{
+	color: $red;
+	margin-bottom: .5em;
+}
+/* header */
+header{
+	text-transform: uppercase;
+	background: url("../img/pexels-photo-247791.png") center center;
+	background-size: cover;
+	position: relative;
+	top: 0;
+	bottom: 0;
+	z-index: -10;
+	min-height:200px;
+	@include breakpoint (850px){
+		min-height:0;
+	}
+	@include breakpoint (print){
+		min-height:0;
+		background: $dark;
+	}
+	h1{
+		color: $light;
+		font-family: $h1-font;
+		letter-spacing: .25em;
+		margin-bottom: 0;
+		font-size: 2em;
+		@include breakpoint (850px){
+			font-size: 3em;
+		}
+		@include breakpoint (print){
+			font-size: 3em;
+		}
+	}
+	h2{
+		color: $red;
+		font-family: $h2-font;
+		font-size: 1em;
+		letter-spacing: .2em;
+		margin-top: 0;
+		@include breakpoint (850px){
+			font-size: 1.7em;
+			padding-top: .5em;
+		}
+		@include breakpoint (print){
+			font-size: 1.7em;
+			padding-top: .5em;
+		}
+	}
+}
+.header-overlay {
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.5);
+	top: 0;
+	bottom: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: -5;
+}
+/* address */
+.contacts{
+	font-size: 1.2em;
+}
+.contacts a:hover{
+	color: $dark;
+}
+i.fa{
+	font-size: 2em;
+}
+/* qualifications */
+.qualifications li{
+	display: inline;
+	padding: 3px;
+	background: $dark;
+	border-radius: 5px;
+	line-height: 180%;
+}
+/* memberships */
+.memberships li {
+	padding-left: 1em;
+	padding-bottom: .5em;
+	text-indent: -1em;
+}
+.memberships li::before {
+	content: "■ ";
+	color: $dark;
+}
+.section-borders{
+	border: solid 1em $medium;
+	border-top: solid 4em $medium;
+	@include breakpoint (850px){
+		border: none;
+	}
+	@include breakpoint (print){
+		border: none;
+	}
+}
+/* @keyframes fadein {
+	from {opacity:0;}
+	to {opacity:1;}
+} */

@@ -1,0 +1,40 @@
+@mixin full-page-resume {
+  font-size: .7em;
+  width: 850px;
+  height: 1100px;
+  margin: 0 auto;
+  grid-template-columns: 620px 230px;
+}
+@mixin full-page-grid {
+  .section-b{
+    grid-row: 3;
+    padding-top: 0;
+  }
+  .section-c{
+    grid-row: 4/6;
+    padding-top: 0;
+  }
+  .section-d{
+    grid-row: 6/7;
+    padding-top: 0;
+    padding-bottom: 3em;
+  }
+  .qualifications{
+    grid-row: 2/5;
+  }
+  .header-grid{
+    grid-row: 1;
+    grid-column: 1;
+    min-height: auto;
+  }
+  aside{
+    grid-column: 2;
+    padding-left: 1.5em;
+    padding-bottom: 0;
+  }
+  section{
+    grid-column: 1;
+    padding-right: 1.5em;
+    padding-bottom: 0;
+  }
+}

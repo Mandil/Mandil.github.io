@@ -193,28 +193,7 @@ i.fa{
 }
 /* print */
 @media print{
-	body {
-		visibility: hidden;
-	}
-	body .resume{
-		visibility: visible;
-	}
-	body .resume{
-		position: absolute;
-		left: 0;
-		top: 0;
-	}
-	p{
-		margin-top: 0;
-	}
-	.resume{
-		font-size: .7em;
-		width: 850px;
-		height: 1100px;
-		margin: 0 auto;
-		display: grid;
-		grid-template-columns: 620px 230px;
-	}
+
 	header{
 		background: var(--dark);
 		grid-row: 1;
