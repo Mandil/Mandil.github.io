@@ -5,6 +5,12 @@
   margin: 0 auto;
   grid-template-columns: 620px 230px;
 }
+@mixin fadein {
+  @keyframes fadein {
+  	from {opacity:0;}
+  	to {opacity:1;}
+  }
+}
 @mixin full-page-grid {
   .section-b{
     grid-row: 3;
