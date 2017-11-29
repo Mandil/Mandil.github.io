@@ -1,14 +1,29 @@
 /* Core Styles
-#056190
-#96c2db
-#0c89b0
+#051f34
+#027495
+#01a9c1
+#bad6db
+#f4f5f5
+
+
+.one {
+  color: white;
+  background-color: var(--main-bg-color);
  */
+
+:root {
+  --darker: #051f34;
+  --dark: #027495;
+  --blue: #01a9c1;
+  --light: #bad6db;
+  --lighter: #f4f5f5;
+}
 
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background: #333;
-  color: #fff;
+  background: var(--darker);
+  color: var(--lighter);
   font-size: 1.1em;
   line-height: 1.5;
   text-align: center;
@@ -34,30 +49,30 @@ p {
 
 .btn {
   display: inline-block;
-  background: #333;
-  color: #fff;
+  background: var(--darker);
+  color: var(--lighter);
   text-decoration: none;
   padding: 1em 2em;
-  border: 1px solid #666;
+  border: 1px solid var(--light);
   margin: 0.5em 0;
 }
 
 .btn:hover {
-  background: #eaeaea;
-  color: #333;
+  background: var(--lighter);
+  color: var(--darker);
 }
 
 /* Header Showcase */
 
 #showcase {
   min-height: 450px;
-  color: #fff;
+  color: var(--lighter);
   text-align: center;
 }
 
 #showcase .bg-image {
   position: absolute;
-  background: #333
+  background: var(--darker)
     url("https://static.pexels.com/photos/38537/woodland-road-falling-leaf-natural-38537.jpeg") center center no-repeat fixed;
   background-size: cover;
   width: 100%;
@@ -79,8 +94,8 @@ p {
 /* Section A */
 
 #section-a {
-  background: #eaeaea;
-  color: #333;
+  background: var(--lighter);
+  color: var(--darker);
   padding-bottom: 2em;
 }
 
@@ -98,8 +113,8 @@ p {
 
 #section-b li {
   margin-bottom: 1em;
-  background: #fff;
-  color: #333;
+  background: var(--lighter);
+  color: var(--darker);
 }
 
 .card-content {
@@ -109,8 +124,8 @@ p {
 /* Section C */
 
 #section-c {
-  background: #fff;
-  color: #333;
+  background: var(--lighter);
+  color: var(--darker);
   padding: 2em;
 }
 
@@ -122,11 +137,11 @@ p {
 
 #section-d .box {
   padding: 2em;
-  color: #fff;
+  color: var(--lighter);
 }
 
 #section-d .box:first-child {
-  background: #2690d4;
+  background: var(--blue);
 }
 
 /* Footer */
@@ -134,12 +149,12 @@ p {
 #main-footer {
   padding: 2em;
   background: #000;
-  color: #fff;
+  color: var(--lighter);
   text-align: center;
 }
 
 #main-footer a {
-  color: #2690d4;
+  var(--blue);
   text-decoration: none;
 }
 
