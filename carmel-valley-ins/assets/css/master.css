@@ -1,16 +1,3 @@
-/* Core Styles
-#051f34
-#027495
-#01a9c1
-#bad6db
-#f4f5f5
-
-
-.one {
-  color: white;
-  background-color: var(--main-bg-color);
- */
-
 :root {
   --darker: #051f34;
   --dark: #027495;
