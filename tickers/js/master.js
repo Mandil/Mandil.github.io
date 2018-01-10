@@ -1,6 +1,5 @@
-$(()=>{
 
-  var bittrex = require('node-bittrex-api');
+  import * as bittrex from 'node-bittrex-api';
   bittrex.options({
     'apikey' : API_KEY,
     'apisecret' : API_SECRET,
@@ -23,6 +22,3 @@ $(()=>{
   //   success: function(res) { console.log(`Success ${res}`); },
   //   error: function(res) { console.log(`Error ${res}`); }
   // })
-
-
-})
