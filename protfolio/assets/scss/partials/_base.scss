@@ -1,77 +1,51 @@
 @import "../modules/mixins";
 
 @include fadein;
+@include chevron;
+@include ham-navbar;
 
 body{
   margin: 0;
   font-family: 'Roboto', sans-serif;
-  color: white;
+  color: #fff;
   text-align: center;
-	background: black;
-  text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+	background: #000;
 }
 .bg-pg-1, .bg-pg-2, .bg-pg-3{
   height: 100vh;
   width: 100%;
 }
 .bg-pg-1{
-  background: #333 url("../img/pexels-photo.jpg");
+  background: #333 url("../img/pexels-photo.jpg") center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-	height: 100vh;
   display: grid;
+  grid-template-rows: 1fr 90vh 1fr;
 }
 .bg-pg-2{
   background: #333;
+  display: grid;
+  grid-template-rows: 1px 1px 1px;
 }
 .bg-pg-3{
   background: orange;
 }
 header{
+  grid-row: 2;
   margin: auto;
 	text-shadow: 0 .6rem .6rem rgba(0,0,0,.5);
 	h1{
 		font-family: 'Satisfy', cursive;
 		font-size: 4em;
-		margin: 0;
-		padding: 0;
+    margin-bottom: 0;
 	}
 	h2{
 		font-family: 'Shadows Into Light', cursive;
 		font-size: 3em;
-		padding: 0;
-		margin: 0;
+    margin-top: 0;
 	}
 }
-#chevron {
-	margin: auto;
-  position: relative;
-  text-align: center;
-  padding: 3px;
-  margin-bottom: 3px;
-  height: 1px;
-  width: 300px;
-}
-
-#chevron:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 51%;
-  background: red;
-  transform: skew(0deg, 6deg);
-}
-
-#chevron:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 100%;
-  width: 50%;
-  background: red;
-  transform: skew(0deg, -6deg);
+.chevron{
+  grid-row: 3;
 }
