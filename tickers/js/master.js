@@ -1,8 +1,8 @@
 
   import * as bittrex from 'node-bittrex-api';
   bittrex.options({
-    'apikey' : '868145ed286844318964abf6c6959ab3',
-    'apisecret' : 'aec47260f81a49dfaaa1609449b69ff0',
+    'apikey' : '',
+    'apisecret' : '',
   });
   bittrex.getmarketsummaries( function( data, err ) {
     if (err) {
