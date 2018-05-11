@@ -42,11 +42,11 @@ body {
     margin-top: 0; } }
 
 section {
-  padding: 3em;
+  padding: 2em;
   background: #fdfdfd; }
 
 aside {
-  padding: 3em;
+  padding: 1em;
   background: #6b5656;
   color: #fdfdfd; }
   @media print {
@@ -154,19 +154,19 @@ i.fa {
   grid-template-columns: 1fr; }
   @media (min-width: 850px) {
     .resume {
-      font-size: .7em;
+      font-size: .67em;
       width: 850px;
       height: 1100px;
       margin: 0 auto;
-      grid-template-columns: 620px 230px;
+      grid-template-columns: 670px 200px;
       animation: fadein 2.5s; } }
   @media print {
     .resume {
-      font-size: .7em;
+      font-size: .67em;
       width: 850px;
       height: 1100px;
       margin: 0 auto;
-      grid-template-columns: 620px 230px;
+      grid-template-columns: 670px 200px;
       font-size: .67em;
       visibility: visible;
       position: absolute;
@@ -186,13 +186,13 @@ i.fa {
   grid-row: 10; }
   @media (min-width: 850px) {
     .memberships {
-      grid-row: 5/7; } }
+      grid-row: 5/8; } }
   @media print {
     .memberships {
-      grid-row: 5/7; } }
+      grid-row: 5/8; } }
 
 .header-grid {
-  padding: 3em;
+  padding: 2em;
   display: grid;
   line-height: 220%; }
 
@@ -207,15 +207,16 @@ i.fa {
     padding-top: 0; }
 
   .section-c {
-    grid-row: 4/6;
+    grid-row: 4/7;
     padding-top: 0; }
 
   .section-d {
-    grid-row: 6/7;
+    grid-row: 7/8;
     padding-top: 0;
     padding-bottom: 3em; }
 
   .qualifications {
+    padding-top: 2em;
     grid-row: 2/5; }
 
   .header-grid {
@@ -225,7 +226,6 @@ i.fa {
 
   aside {
     grid-column: 2;
-    padding-left: 1.5em;
     padding-bottom: 0; }
 
   section {
@@ -238,15 +238,16 @@ i.fa {
     padding-top: 0; }
 
   .section-c {
-    grid-row: 4/6;
+    grid-row: 4/7;
     padding-top: 0; }
 
   .section-d {
-    grid-row: 6/7;
+    grid-row: 7/8;
     padding-top: 0;
     padding-bottom: 3em; }
 
   .qualifications {
+    padding-top: 2em;
     grid-row: 2/5; }
 
   .header-grid {
@@ -256,7 +257,6 @@ i.fa {
 
   aside {
     grid-column: 2;
-    padding-left: 1.5em;
     padding-bottom: 0; }
 
   section {
@@ -265,6 +265,6 @@ i.fa {
     padding-bottom: 0; }
 
   .section-a h3, .qualifications h3 {
-    margin-top: 0; } }
+    margin-top: 10px; } }
 
 /*# sourceMappingURL=style.css.map */
