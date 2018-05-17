@@ -58,15 +58,17 @@
     }
   }
   #line-1, #line-2, #line-3{
-    padding: 2px;
-    margin: 8px;
-    width: 30px;
+    width: 35px;
+    height: 5px;
+    margin: 6px 0;
+    transition: 0.4s;
     background: red;
   }
   nav:hover{
-    ul{
+    ul {
       display: inherit;
     }
+
     .ham-nav{
       margin: 8px;
     }
@@ -75,10 +77,12 @@
     }
     #line-1{
       position: absolute;
-      transform: skew(0deg, -45deg);
+      // transform: skew(0deg, -45deg);
+      transform: rotate(-45deg) translate(-9px, 6px);
     }
     #line-3{
-      transform: skew(0deg, 45deg);
+      // transform: skew(0deg, 45deg)
+      transform: rotate(45deg) translate(-8px, -8px);
     }
   }
 }
