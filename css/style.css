@@ -1,0 +1,181 @@
+/* Custom Stylesheet */
+/**
+* Use this file to override Materialize files so you can update
+* the core Materialize files in the future
+*
+* Made By MaterializeCSS.com
+*/
+
+body {
+  overflow: hidden;
+  background-color: #202124;
+}
+
+/* Preloader */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  /* change if the mask should have another color then white */
+  z-index: 99;
+  /* makes sure it stays on top */
+}
+
+#status {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  /* centers the loading animation horizontally one the screen */
+  top: 50%;
+  /* centers the loading animation vertically one the screen */
+  background-image: url(https://raw.githubusercontent.com/niklausgerber/PreLoadMe/master/img/status.gif);
+  /* path to your loading animation */
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: -100px 0 0 -100px;
+  /* is width and height divided by two */
+}
+
+nav ul a,
+nav .brand-logo {
+  color: white;
+}
+
+nav ul a:hover {
+  color: #fd4345;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.sidenav-trigger {
+  color: #fd4345;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+
+.parallax-container .section {
+  width: 100%;
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+
+.my-btn .material-icons {
+  vertical-align: middle;
+  line-height: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+.brand-logo span {
+  color: #fd4345!important;
+}
+
+.links {
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-gap: 0.5em;
+}
+
+.bio-connect {
+  display:grid;
+  grid-template-columns: auto 280px;
+  grid-gap:20px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+a {
+  color: white;
+}
+
+.navbar-ham {
+  background-color: #202124;
+  box-shadow: 0 2px 4px rgba(0,0,0,.5);
+}
+
+.projects-section {
+  background: white;
+}
+
+#nav-mobile {
+  /* color: #fd4345; */
+}
+
+.waves-red , .footer-copyright a {
+  color: #fd4345;
+}
+
+.page-footer {
+  background-color: #202124;
+}
+
+.footer-copyright {
+  box-shadow: 0 2px 4px rgba(0,0,0,.5);
+}
+
+.my-btn {
+  font-size: 1.6rem;
+  display: inline-block;
+  vertical-align: middle;
+  transition: .3s ease-out;
+  border-radius: 50%;
+  background-color: transparent;
+  color: #343434;
+  line-height: 45px;
+  width: 45px;
+  text-align: center;
+}
+
+.my-btn:hover {
+  background-color: #f2f2f2;
+  transition: background-color 0.5s ease-out;
+}
+
+#connect .fab {
+  font-size: 1.6rem;
+}
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+  .bio-connect {
+    display: block;
+  }
+  .bio, #connect {
+    margin: 20px 10px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+  }
+  .bio *, #connect *, .bio p {
+    color: #212121!important;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}

@@ -1,144 +1,322 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="assets/css/style.css">
-	<script src="https://use.fontawesome.com/47c902da99.js"></script>
-	<link href="https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Roboto:400,700" rel="stylesheet">
-	<link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
-	<title>Hassan AlMandil - Résumé</title>
-	<meta property="og:site_name" content="Hassan AlMandil - Résumé"/>
-	<meta property="og:title" content="Full-Stack Web Developer | Engineer | Blockchain Enthusiast"/>
-	<meta property="og:description" content="Math is my game, and I love to build new things and see them working. I am a full-stack software engineer backed with years of experience in engineering, project management and problem-solving."/>
-	<meta property="og:image" content="assets/img/li-image.png">
-	<meta property="og:url" content="https://mandil.github.io/">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="shortcut icon" href="images/fav/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon-precomposed" href="images/fav/favicon.ico">
+  <title>Mandil Website</title>
+  <meta property="og:site_name" content="Hassan AlMandil - Professional Website"/>
+  <meta property="og:title" content="Hassan AlMandil | Web Developer | Portfolio"/>
+  <meta property="og:description" content="This is web developer portfolio website"/>
+  <meta property="og:image" content="images/projects/mysite.png">
+  <meta property="og:url" content="https://mandil.github.io/">
 
+  <!-- CSS  -->
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen"/>
 </head>
 <body>
-	<main class="resume">
-		<header>
-			<div class="header-overlay">
-				<div class="header-grid">
-					<h1>Hassan AlMandil</h1>
-					<h2>Full-Stack Developer</h2>
-				</div>
-			</div>
-		</header>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div id="status">&nbsp;</div>
+  </div>
 
-		<aside>
-			<ul class="contacts">
-				<li><a class="address-grid" href="tel:8588486168"><i class="fa fa-phone-square" aria-hidden="true"></i><span>(858) 848-6168</span></a></li>
-				<li><a class="address-grid" href="https://www.linkedin.com/in/hmandil/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i><span>/in/hmandil</span></a></li>
-				<li><a class="address-grid" href="https://github.com/Mandil" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i><span>/Mandil</span></a></li>
-				<li><a class="address-grid" href="mailto:hai.mandil@gmail.com"><i class="fa fa-envelope-square" aria-hidden="true"></i><span>hai.mandil@gmail.com</span></a></li>
-			</ul>
-		</aside>
+  <!-- navbar -->
+  <div class="navbar-fixed">
+    <nav class="navbar-ham">
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="/" class="brand-logo">H<span>M</span></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#bio">About</a></li>
+          <li><a href="#connect">Connect</a></li>
+        </ul>
 
-		<aside class="qualifications">
-			<h3>Qualifications</h3>
-			<h4>LANGUAGES</h4>
-			<ul>
-				<li>JavaScript</li>
-				<li>TypeScript</li>
-				<li>ES6</li>
-				<li>Ruby</li>
-				<li>Solidity</li>
-				<li>HTML5</li>
-				<li>CSS3</li>
-			</ul>
-			<h4>FRAMEWORKS & LIBRARIES</h4>
-			<ul>
-				<li>React</li>
-				<li>jQuery</li>
-				<li>AJAX</li>
-				<li>Node.js</li>
-				<li>Express.js</li>
-				<li>web3.js</li>
-				<li>Ruby on Rails</li>
-				<li>Sinatra</li>
-				<li>Sass</li>
-				<li>Bootstrap</li>
-			</ul>
-			<h4>TESTING</h4>
-			<ul>
-				<li>Rspec</li>
-				<li>Jasmine</li>
-				<li>Capybara</li>
-				<li>CircleCi</li>
-				<li>Factory Girl</li>
-			</ul>
-			<h4>DATABASE</h4>
-			<ul>
-				<li>SQL [PostgreSQL, SQLite]</li>
-				<li>MongoDB</li>
-				<li>ActiveRecord</li>
-			</ul>
-			<h4>APIS & WS</h4>
-			<ul>
-				<li>AWS</li>
-				<li>Google Cloud</li>
-				<li>Google Maps</li>
-				<li>Facebook</li>
-				<li>Auth0</li>
-			</ul>
-			<h4>VERSION</h4>
-			<ul>
-				<li>Git</li>
-				<li>GitHub</li>
-			</ul>
-			<h4>METHODOLOGIES</h4>
-			<ul>
-				<li>Object-Oriented Design</li>
-				<li>TDD</li>
-				<li>Agile</li>
-				<li>RESTful conventions</li>
-			</ul>
-		</aside>
-		<aside class="memberships">
-			<h3>Memberships & Certifications</h3>
-			<ul>
-				<li>Member of the Project Management Institute - Since 2013</li>
-				<li>Budgeting & Scheduling Projects by the University of California, Irvine [Jun 2015]</li>
-				<li>Initiating & Planning Projects by the University of California, Irvine [Jul 2015]</li>
-				<li>QMS ISO 9001:2008 Auditor / Lead Auditor Training Course by Intertek, 2014</li>
-			</ul>
-		</aside>
+        <ul id="nav-mobile" class="sidenav">
+          <li><a href="#bio">About</a></li>
+          <li><a href="#connect">Connect</a></li>
+        </ul>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons left">menu</i></a>
+      </div>
+    </nav>
+  </div>
 
-		<section class="section-a">
-			<h3>About Me</h3>
-			<p>Math is my game, and I love to build new things and see them working. I am a full-stack software engineer backed with years of experience in engineering, project management and problem-solving.</p>
-		</section>
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center text-lighten-2">Hassan AlMandil</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">Full-Stack Web Developer | Engineer | Blockchain Enthusiast</h5>
+        </div>
+        <div class="row center">
+          <a href="#bio" class="waves-effect waves-red btn-flat">more About Me!</a>
+        </div>
+        <br><br>
 
-		<section class="section-b section-borders">
-			<h3>Projects</h3>
-			<h4>SendMeCoin a Startup Weekend Blockchain Edition project in Seattle [May 2018]</h4>
-			<p>Within 54 hours we built a decentralized global registry on the Ethereum network for unique ID's that users can pick and later use to send and receive cryptos, our team competed with another 13 teams during the weekend and we won the 2nd place.</p>
-			<h4><a href="https://github.com/Sautee-Seattle/Sautee-Seattle" target="_blank">Sauté-Seattle [Nov 2017]</a></h4>
-			<p>Worked on this project as one of five team members, in five days we built this full-stack project using Ruby on Rails, google maps API, with 100% test coverage, we hosted the project on heroku.com and AWS used to host project media.</p>
-			<h4><a href="https://github.com/DBC-Rocketeers/inventory-management" target="_blank">Inventory Management System [Oct 2017]</a></h4>
-			<p>Worked on this project as one of four team members, within four days we built this full-stack project using Ruby on Rails, with 100% test coverage, the project is hosted on heroku.com.</p>
-			<h4><a href="http://www.satorp.com/" target="_blank">SATORP Package 6: Refinery Tank Farm [Jul 2009 - Nov 2012]</a></h4>
-			<p>Was part of the project supervision team, partly responsible for the overall project plan, financial & procurement management and reporting progress to c-level executives.</p>
-		</section>
+      </div>
+    </div>
+    <div class="parallax"><img src="images/parallax-bgs/background1.jpg" alt="Credit: Unsplashed, background coding"></div>
+  </div>
 
-		<section class="section-c section-borders">
-			<h3>Experience</h3>
-			<h4>Freelance, Seattle - Web Development and Support [Oct 2017 - till date]</h4>
-			<p>Provide various services to startups and entrepreneurs, including building MVP's, developing web applications and Dapps on the Ethereum network and connecting their apps to cloud services like AWS and Google Cloud.</p>
-			<h4>Small businesses, San Diego - Entrepreneur [Jun 2015 - Mar 2017]</h4>
-			<p>Started an e-commerce website with two other partners and was responsible for digital marketing, SEO, and analytics. Also founded/co-founded other two business, in real estate and passengers transportation business.</p>
-			<h4><a href="http://www.rafidgroup.com" target="_blank">Rafid Group</a>, Middle East - Director [Dec 2007 - Dec 2014]</h4>
-			<p>Responsible for leading the entire organization (Sales, Marketing, Finance, Engineering, Procurement, Logistics, HR, and Administration) in the development and implementation of the Group’s Sales and Marketing strategy in Saudi and the Middle East region.</p>
-		</section>
 
-		<section class="education section-d section-borders">
-			<h3>Education</h3>
-			<h4><a href="https://devbootcamp.com/" target="_blank">Dev Bootcamp</a>, Seattle - Web Development Student [Apr 2017 - Nov 2017]</h4>
-			<p>Over 24 weeks, 1000+ hours of an intensive and immersive program to learn full stack web development skills. An average of 85 hours per week was dedicated to building and studying the many concepts of computer science such as algorithms, data structures, Object-Oriented Design, MVC patterns, Agile Development and Test/Behavior Driven Development.</p>
-			<h4><a href="https://www.aiu.edu/" target="_blank">Atlantic International University</a>, UAE - Bachelor of Computer Engineering</h4>
-			<p>Studied the integration of several fields of electrical engineering and computer science required to develop computer hardware and software.</p>
-		</section>
-	</main>
+  <div class="container">
+    <div class="section">
+      <div class="container center">
+        <h2 class="center white-text">Technologies</h2>
+
+        <div class="chip">JavaScript</div>
+        <div class="chip">TypeScript</div>
+        <div class="chip">ES6</div>
+        <div class="chip">Ruby</div>
+        <div class="chip">Solidity</div>
+        <div class="chip">HTML5</div>
+        <div class="chip">CSS3</div>
+        <div class="chip">React</div>
+        <div class="chip">jQuery</div>
+        <div class="chip">AJAX</div>
+        <div class="chip">Node.js</div>
+        <div class="chip">Express.js</div>
+        <div class="chip">web3.js</div>
+        <div class="chip">Ethereum</div>
+        <div class="chip">Ruby on Rails</div>
+        <div class="chip">Sinatra</div>
+        <div class="chip">Sass</div>
+        <div class="chip">Bootstrap</div>
+        <div class="chip">Rspec</div>
+        <div class="chip">Jasmine</div>
+        <div class="chip">Capybara</div>
+        <div class="chip">CircleCi</div>
+        <div class="chip">Factory Girl</div>
+        <div class="chip">PostgreSQL</div>
+        <div class="chip">SQLite</div>
+        <div class="chip">MongoDB</div>
+        <div class="chip">ActiveRecord</div>
+        <div class="chip">BlockChain</div>
+        <div class="chip">AWS</div>
+        <div class="chip">Google Cloud</div>
+        <div class="chip">Google Maps</div>
+        <div class="chip">Facebook</div>
+        <div class="chip">Auth0</div>
+        <div class="chip">Git</div>
+        <div class="chip">GitHub</div>
+        <div class="chip">Object-Oriented Design</div>
+        <div class="chip">TDD</div>
+        <div class="chip">Agile</div>
+        <div class="chip">RESTful conventions</div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">I have always had a deep curiosity about how the world works. This interest along with my passion for creating and building things has led my tech and coding enthusiasm to grow more and more.</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="images/parallax-bgs/background2.jpg" alt="Credit: Unsplashed, background curiosity"></div>
+  </div>
+
+  <div class="section projects-section">
+    <div class="container">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <h2 class="center section-title">Projects</h2>
+        <div class="col s12 m6 l4">
+          <div class="card hoverable">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="images/projects/sautee-seattle.png" alt="Sautee-Seattle website snapshot">
+            </div>
+            <div class="card-content truncate">
+
+              <span class="activator card-title grey-text text-darken-3 ">Sautee-Seattle</span>
+                <a href="https://github.com/Sautee-Seattle/Sautee-Seattle" target="_blank" class="my-btn"><i class="fab fa-github grey-text"></i></a>
+
+                <a href="http://sautee-seattle.herokuapp.com/" target="_blank" class="my-btn"><i class="material-icons grey-text">share</i></a>
+
+                <span class="my-btn right activator">
+                  <i class="material-icons grey-text pointer pointer">more_vert</i>
+                </span>
+
+
+            </div>
+
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Sauté-Seattle - Nov 2017<i class="material-icons right">close</i></span>
+              <p>Worked on this project as one of five team members, in <em>five days</em> we built this <em>full-stack</em> project using <em>Ruby on Rails</em>, <em>Google Maps</em> API, with 100% test coverage, we hosted the project on <em>heroku.com</em> and <em>AWS</em> used to host project media.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l4">
+          <div class="card hoverable">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="images/projects/rutherford-rocket.png" alt="Inventory System website snapshot">
+            </div>
+            <div class="card-content truncate">
+              <span class="card-title activator grey-text text-darken-3 ">Inventory System</span>
+
+                <a href="https://github.com/DBC-Rocketeers/inventory-management" target="_blank" class="my-btn"><i class="fab fa-github grey-text"></i></a>
+
+                <a href="https://rutherford-rocket.herokuapp.com/" target="_blank" class="my-btn"><i class="material-icons grey-text">share</i></a>
+
+                <span class="my-btn right activator">
+                  <i class="material-icons grey-text pointer">more_vert</i>
+                </span>
+
+
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Inventory Management System<i class="material-icons right">close</i></span>
+              <p>Worked on this project as one of four team members, within <em>four days</em> we built this <em>full-stack</em> project using <em>Ruby on Rails</em>, with 100% test coverage, the project is hosted on <em>heroku.com</em>.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l4">
+          <div class="card hoverable">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="images/projects/resume.png" alt="My Résumé website snapshot">
+            </div>
+            <div class="card-content truncate">
+
+              <span class="card-title activator grey-text text-darken-3 ">My Résumé</span>
+
+              <a href="https://github.com/Sautee-Seattle/Sautee-Seattle" target="_blank" class="my-btn"><i class="fab fa-github grey-text"></i></a>
+
+              <a href="http://sautee-seattle.herokuapp.com/" target="_blank" class="my-btn"><i class="material-icons grey-text">share</i></a>
+
+              <span class="my-btn right activator">
+                <i class="material-icons grey-text pointer">more_vert</i>
+              </span>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Résumé<i class="material-icons right">close</i></span>
+              <p>I designed my Résumé from groundup with simple <em>Html5</em> and <em>SCSS</em>.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l4">
+          <div class="card hoverable">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="images/projects/under-construction-unsplash.png" alt="Newsly website snapshot">
+            </div>
+            <div class="card-content truncate">
+              <span class="card-title activator grey-text text-darken-3 ">Newsly - <em>Soon</em></span>
+
+              <a href="https://github.com/Sautee-Seattle/Sautee-Seattle" target="_blank" class="my-btn"><i class="fab fa-github grey-text"></i></a>
+
+              <a href="http://sautee-seattle.herokuapp.com/" target="_blank" class="my-btn"><i class="material-icons grey-text">share</i></a>
+
+              <span class="my-btn right activator">
+                <i class="material-icons grey-text pointer">more_vert</i>
+              </span>
+
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Newsly<i class="material-icons right">close</i></span>
+              <p>Newsly is costumized news page as per user interest, I'm using React, Google Cloud.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l4">
+          <div class="card hoverable">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="images/projects/mysite.png" alt="My Website snapshot">
+            </div>
+            <div class="card-content truncate">
+              <span class="card-title activator grey-text text-darken-4 ">My Website</span>
+
+              <a href="https://github.com/Sautee-Seattle/Sautee-Seattle" target="_blank" class="my-btn"><i class="fab fa-github grey-text"></i></a>
+
+              <a href="http://sautee-seattle.herokuapp.com/" target="_blank" class="red-waves my-btn"><i class="material-icons grey-text">share</i></a>
+
+              <span class="my-btn right activator">
+                <i class="material-icons grey-text pointer">more_vert</i>
+              </span>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">My Personal Website<i class="material-icons right">close</i></span>
+              <p>Here is some more information about this product that is only revealed once clicked on.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">I have experience managing teams and leading projects, and I am a firm believer that organizations who enjoy working together communicate better and do quality work</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="images/parallax-bgs/background3.jpg" alt="Credit: Unsplashed, teamwork"></div>
+  </div>
+
+  <footer id="bio" class="page-footer">
+    <div class="container">
+      <div class="bio-connect">
+        <div class="bio">
+          <h5>Bio</h5>
+          <p>Passionate about tech and machine learning. Math is my game, and I love to build new things and see them working. I am a software engineer backed with years of experience in engineering, project management and problem-solving.</p>
+          <p>Currently, I am teaching myself Solidity a contract-oriented programming language to build my first Ethereum application.</p>
+          <p>Whether grabbing a beer or a cup of coffee, as long as I have good company I am a happy man. Feel free to reach out!</p>
+        </div>
+
+
+        <div id="connect" class="">
+          <h5 class="">Connect</h5>
+          <div class="links">
+              <span class="link">
+                <i class="material-icons left">cloud</i>
+                +1 (858) 848-6168
+              </span>
+              <span class="link">
+                <i class="material-icons left">alternate_email</i>
+                hai.mandil@gmail.com
+              </span>
+              <a href="https://mandil.github.io/" class="link" target="_blank">
+                <i class="material-icons left">library_books</i>
+                Résumé
+              </a>
+              <a href="https://www.linkedin.com/in/hmandil/" class="link" target="_blank">
+                <i class="fab fa-linkedin left"></i>
+                /in/hmandil/
+              </a>
+              <a href="https://github.com/Mandil" class="link" target="_blank">
+                <i class="fab fa-github left"></i>
+                /Mandil
+              </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        by <a class="" href="https://github.com/Mandil" target="_blank">Mandil</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
 </body>
 </html>
