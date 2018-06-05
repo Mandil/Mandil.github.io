@@ -1,0 +1,124 @@
+/* reset */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* general */
+body {
+  font-family: "Roboto", sans-serif;
+  background: #f1f1f1;
+  letter-spacing: 1px;
+  color: #263547;
+  font-size: 0.84rem;
+  line-height: 125%;
+  margin: 0;
+}
+
+/* resume */
+.resume {
+  margin: 0 auto;
+  background: #fdfdfd;
+  height: 1100px;
+  width: 850px;
+  display: grid;
+  grid-template-columns: 10fr 4fr;
+}
+
+header {
+  text-transform: uppercase;
+  background: url("../img/bg-image.png") center center;
+  background-size: cover;
+  position: relative;
+  top: 0;
+  bottom: 0;
+}
+
+header article {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: 400;
+  margin: 0;
+  letter-spacing: 0.25rem;
+}
+
+header h1 {
+  font-family: 'Montserrat', sans-serif;
+  color: #fdfdfd;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+header h3 {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 1.2rem;
+}
+
+.contacts {
+  font-size: 1rem;
+}
+
+.contacts li:hover, header h3 {
+  color: #fd4345;
+}
+
+header, .contacts {
+  padding-top: 2rem;
+}
+
+.side, main {
+  padding-top: 1rem;
+}
+
+header, main {
+  padding-left: 2rem;
+}
+
+main, aside {
+  padding-right: 1rem;
+}
+
+aside {
+  padding-left: 1rem;
+  background: #6b5656;
+  color: #fdfdfd;
+}
+
+i.fa {
+  margin-right: .5rem;
+  font-size: 1.2rem;
+}
+
+.cells li {
+  display: inline-block;
+  background: #263547;
+  border-radius: 5px;
+  margin: 1px;
+  padding: 3px 5px;
+}
+
+.article-title {
+  margin: 1rem 0 0.2rem 0;
+  font-size: 1rem;
+  color: #fd4345;
+}
+
+.section-title {
+  margin: 0.5rem 0 0.1rem 0;
+  font-size: 0.9rem;
+}
+
+.memberships li::before {
+	content: "■ ";
+}

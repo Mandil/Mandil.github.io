@@ -14,19 +14,16 @@
 @mixin full-page-grid {
   .section-b{
     grid-row: 3;
-    padding-top: 0;
+    padding-top: 2rem;
   }
   .section-c{
     grid-row: 4/7;
-    padding-top: 0;
   }
   .section-d{
     grid-row: 7/8;
-    padding-top: 0;
-    padding-bottom: 3em;
   }
   .qualifications{
-    padding-top: 2em;
+    padding-top: 2rem;
     grid-row: 2/5;
   }
   .header-grid{
@@ -40,7 +37,6 @@
   }
   section{
     grid-column: 1;
-    padding-right: 1.5em;
-    padding-bottom: 0;
+    padding: 0 1rem;
   }
 }

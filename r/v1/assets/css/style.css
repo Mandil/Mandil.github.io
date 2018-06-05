@@ -42,7 +42,6 @@ body {
     margin-top: 0; } }
 
 section {
-  padding: 2em;
   background: #fdfdfd; }
 
 aside {
@@ -204,19 +203,16 @@ i.fa {
 @media (min-width: 850px) {
   .section-b {
     grid-row: 3;
-    padding-top: 0; }
+    padding-top: 2rem; }
 
   .section-c {
-    grid-row: 4/7;
-    padding-top: 0; }
+    grid-row: 4/7; }
 
   .section-d {
-    grid-row: 7/8;
-    padding-top: 0;
-    padding-bottom: 3em; }
+    grid-row: 7/8; }
 
   .qualifications {
-    padding-top: 2em;
+    padding-top: 2rem;
     grid-row: 2/5; }
 
   .header-grid {
@@ -230,24 +226,20 @@ i.fa {
 
   section {
     grid-column: 1;
-    padding-right: 1.5em;
-    padding-bottom: 0; } }
+    padding: 0 1rem; } }
 @media print {
   .section-b {
     grid-row: 3;
-    padding-top: 0; }
+    padding-top: 2rem; }
 
   .section-c {
-    grid-row: 4/7;
-    padding-top: 0; }
+    grid-row: 4/7; }
 
   .section-d {
-    grid-row: 7/8;
-    padding-top: 0;
-    padding-bottom: 3em; }
+    grid-row: 7/8; }
 
   .qualifications {
-    padding-top: 2em;
+    padding-top: 2rem;
     grid-row: 2/5; }
 
   .header-grid {
@@ -261,8 +253,7 @@ i.fa {
 
   section {
     grid-column: 1;
-    padding-right: 1.5em;
-    padding-bottom: 0; }
+    padding: 0 1rem; }
 
   .section-a h3, .qualifications h3 {
     margin-top: 10px; } }
