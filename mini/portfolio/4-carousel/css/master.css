@@ -1,0 +1,107 @@
+html, body {
+    height: 100vh;
+    display: grid;
+}
+
+body {
+    background: linear-gradient(to right, #d2d5de, #d6dbe0, #d4d7e0);
+}
+
+main { 
+    margin: auto;
+    display: grid;
+    max-width: 960px;
+    grid-template-columns: 64px auto 64px;
+    background: darkslategrey;
+    border-radius: 1rem;
+}
+
+nav.items {
+    grid-column: 1/4;
+    grid-row: 2/3;
+    text-align: center;
+}
+
+img {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    transition: opacity 1s linear 0.5;
+    box-shadow: 1px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.active {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+.btn {
+    grid-row: 1/3;
+    background: transparent;
+    border: none;
+    z-index: 99;
+    cursor: pointer;
+    outline:none;
+    color: rgba(255, 255, 255, 0.3);
+    padding: 0;
+}
+
+.material-icons.large { 
+    font-size: 4rem; 
+}
+
+.btn-right {
+    grid-column: 3/4;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.btn-left {
+    grid-column: 1/2;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.btn:hover {
+    background: rgb(220,220,220,0.3);
+    color: rgba(255, 255, 255, 1);
+}
+
+.btn:hover .material-icons {
+    transform: scale(1.2);
+}
+
+.items .material-icons {
+    font-size: 0.8rem;
+}
+
+.items span {
+    color: rgba(255, 255, 255, 0.3);
+    padding: 0.4rem;
+    cursor: pointer;
+}
+
+.items {
+    z-index: 99;
+}
+
+.items span:hover .material-icons, .items span.selected .material-icons {
+    color: rgba(255, 255, 255, 1);
+    transform: scale(1.4);
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-in 1 forwards;
+}

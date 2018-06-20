@@ -1,0 +1,47 @@
+body, html {
+  height: 100%;
+  display: grid;
+}
+
+body {
+  background: #ccc url('../images/audience-band-concert-167491-bw.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.keys {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(9,1fr);
+  grid-gap: 5px
+}
+
+.key {
+  background-color:rgba(0, 0, 0, 0.4);
+  text-align: center;
+  border: black solid 4px;
+  border-radius: 0.5rem;
+  grid-row: 1;
+  transition: all 0.07s;
+}
+
+.key * {
+  display: block;
+  margin: 0.5rem;
+  text-transform: uppercase;
+}
+
+.key kbd {
+  font-size: 2rem;
+  color: white;
+}
+
+.key span {
+  font-size: 0.5rem;
+  color: orange;
+}
+
+.playing {
+  border-color: orange;
+  transform: scale(1.1);
+  box-shadow: 0 0 10px orange;
+}

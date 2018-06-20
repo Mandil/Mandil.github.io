@@ -1,0 +1,78 @@
+html {
+    font-weight: 200;
+}
+
+body {
+    margin: 0;
+}
+
+main { 
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+}
+
+.panel {
+    flex: 1;
+    box-shadow: inset 0 0 0 5px rgba(255,255,255,0.1);
+    transition: flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
+                font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
+                background 0.2s;
+    color: rgb(233, 233, 233);
+    display: flex;
+    flex-direction: column;
+}
+
+.panel > * {
+    transition: transform 0.5s;
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 1px  Black;
+}
+
+.panel > *:first-child {transform: translateY(-100%);}
+.panel.active > *:first-child {transform: translateY(0);}
+.panel > *:last-child {transform: translateY(100%);}
+.panel.active > *:last-child {transform: translateY(0);}
+
+.panel p:nth-child(2) {
+    font-size: 3em;
+}
+
+.panel.open {
+    flex: 5;
+    font-size: 3rem;
+}
+
+#panel-1 {
+    background: url('../images/1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#panel-2 {
+    background: url('../images/2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#panel-3 {
+    background: url('../images/3.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#panel-4 {
+    background: url('../images/4.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#panel-5 {
+    background: url('../images/5.jpg');
+    background-size: cover;
+    background-position: center;
+}

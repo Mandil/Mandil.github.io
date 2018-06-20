@@ -1,0 +1,38 @@
+:root {
+    --color: #ff0000;
+    --blur: 10px;
+    --space: 10px;
+}
+
+body, html {
+    display: grid;
+    height: 100vh;
+    text-align: center;
+}
+
+body {
+    background: teal;
+}
+
+h1 {
+    color: aliceblue;
+    font-size: 3rem;
+}
+
+h1 span {
+    color: var(--color);
+}
+
+label {
+    color: aliceblue;
+    font-size: 2rem;
+}
+
+img {
+    width: 80%;
+    margin: 0 auto;
+    border-color: var(--color);
+    border-width: var(--space);
+    border-style: solid;
+    filter: blur(var(--blur))
+}
