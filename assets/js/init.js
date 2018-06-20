@@ -1,6 +1,7 @@
 $(()=>{
   $('.parallax').parallax();
   $('.sidenav').sidenav();
+  $('.disabled').on('click', (e) => e.preventDefault())
 })
 
 
