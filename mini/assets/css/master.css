@@ -8,13 +8,18 @@ body {
   margin: 0;
 }
 
+header {
+  text-align:center;
+  color: white;
+
+}
+
 .cards {
   margin-top: 2rem;
   display: grid;
   grid-template-columns: auto;
   grid-gap: 10px;
   justify-content: center;
-  height: 100vh;
 }
 
 .card {
@@ -22,8 +27,7 @@ body {
   height: 500px;
   border-radius: 10px;
   background: white;
-  /* margin: auto; */
-
+  margin: auto;
 }
 
 h3, p {
