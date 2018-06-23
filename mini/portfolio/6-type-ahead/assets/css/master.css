@@ -1,3 +1,26 @@
 body {
   background: teal;
 }
+
+ul.results {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  display: inline-block;
+  font-size: 0.7rem;
+}
+
+ul.results li {
+  padding: 0 1rem;
+  border: 1px teal solid;
+  background: white;
+  color: teal;
+  border-radius: 3px;
+}
+
+ul.results li:hover {
+  background: teal;
+  color: white;
+  border-color: white;
+
+}
