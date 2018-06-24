@@ -4,6 +4,9 @@ html, body {
   margin: 0;
 }
 
-#canvas:active {
+#canvas:hover {
   cursor:cell;
+}
+#canvas:active {
+  cursor: url('../images/brush.png') 10.5 30, auto;
 }
