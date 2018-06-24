@@ -68,3 +68,33 @@ const listenToInput = (cities) => {
 fetch(endpoint).then(res => res.json())
 .catch(error => console.error('Error:', error))
 .then(response => listenToInput(response));
+
+const locationButton = document.querySelector('.geolocation');
+
+locationButton.addEventListener('click', () => {
+  locationButton.removeChild(locationButton.firstChild)
+  locationButton.classList.add('loading');
+
+  if (navigator.geolocation) {
+    /* geolocation is available */
+    console.log('geolocation is available');
+    navigator.geolocation.getCurrentPosition( (position) => {
+      const latitude = position.coords.latitude;
+      const longitude = position.coords.longitude;
+      const url = `https://nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude}`;
+
+      fetch(url).then(res => res.json())
+      .catch(error => console.error('Error:', error))
+      .then(response => {
+        input.value = response.address.city;
+        locationButton.classList.remove('loading');
+        locationButton.innerHTML = `<i class="material-icons">location_searching</i>`
+
+      });
+    });
+  } else {
+    /* geolocation IS NOT available */
+    console.log('geolocation IS NOT available');
+  }
+
+})

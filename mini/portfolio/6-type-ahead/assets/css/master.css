@@ -27,7 +27,7 @@ body {
 
 .main-form {
   display: grid;
-  grid-template-columns: 1fr 40px;
+  grid-template-columns: 1fr 30px 40px;
 }
 
 .main-form > * {
@@ -44,15 +44,30 @@ body {
 
 .main-form button {
   font-size: 1rem;
-  background: #e7e7e7;
-  color: gray;
-  border-left: none;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border: none;
   cursor: pointer;
   display: grid;
   height: 100%;
-  border: 2px solid #e7e7e7;
+}
+
+.main-form button.search {
+  background: #e7e7e7;
+  color: gray;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+button.geolocation {
+  position: relative;
+}
+
+button.geolocation.loading {
+  background: url(http://www.xiconeditor.com/image/icons/loading.gif) no-repeat right center;
+}
+
+.main-form button.geolocation i {
+  font-size: 1rem;
+  color: LightBlue;
 }
 
 .main-form i {
@@ -60,9 +75,10 @@ body {
   margin: auto;
 }
 
-.main-form button:hover {
+.main-form button.search:hover {
   background: gray;
   color: white;
+  box-shadow: 0 0 1px 0 white;
 }
 
 .results-section {
