@@ -1,26 +1,111 @@
-body {
-  background: teal;
+html, body {
+  display: grid;
 }
 
-ul.results {
+body {
+  background: AZURE;
+}
+
+*:focus {outline:none}
+
+.main {
+  margin: auto;
+  padding: 1rem;
+  margin-top: 4rem;
+  background: teal;
+  border-radius: 8px;
+}
+
+.main h2 {
+  margin: .5rem;
+  color: white;
+}
+
+.form-section {
+  width: 280px;
+}
+
+.main-form {
+  display: grid;
+  grid-template-columns: 1fr 40px;
+}
+
+.main-form > * {
+  padding: .5rem;
+  border: none;
+}
+
+.main-form input {
+  font-size: 1rem;
+  border-right: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.main-form button {
+  font-size: 1rem;
+  background: #e7e7e7;
+  color: gray;
+  border-left: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+  display: grid;
+  height: 100%;
+  border: 2px solid #e7e7e7;
+}
+
+.main-form i {
+  font-weight: bold;
+  margin: auto;
+}
+
+.main-form button:hover {
+  background: gray;
+  color: white;
+}
+
+.results-section {
+  position: absolute;
+}
+
+ul {
   margin: 0;
   list-style: none;
   padding: 0;
-  display: inline-block;
-  font-size: 0.7rem;
 }
 
-ul.results li {
-  padding: 0 1rem;
+ul.results {
+  display: inline-block;
+  font-size: 0.9rem;
+  width: 240px;
+}
+
+ul.results ul {
+  padding: .2rem 0.5rem;
   border: 1px teal solid;
   background: white;
   color: teal;
   border-radius: 3px;
+  height: 1rem;
+  display: grid;
+  cursor: pointer;
+  text-transform: capitalize;
+  grid-template-columns: 160px 1fr;
+  overflow: hidden;
 }
 
-ul.results li:hover {
+ul.results .population {
+  text-align: right;
+}
+
+ul.results ul:hover {
   background: teal;
   color: white;
   border-color: white;
+}
 
+.highlight {
+  background: yellow;
+  color: teal;
 }

@@ -1,33 +1,67 @@
 const endpoint = 'https://gist.githubusercontent.com/Miserlou/c5cd8364bf9b2420bb29/raw/2bf258763cdddd704f8ffd3ea9a3e81d25e2c6f6/cities.json';
 
+const numberWithCommas = (x) => {
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+
+const clearSelections = () => {
+  while (resultDiv.firstChild) resultDiv.removeChild(resultDiv.firstChild);
+}
+
 const input = document.querySelector('input');
 
 const resultDiv = document.querySelector('ul.results');
 
 const handleSelection = (e) => {
-  input.value = e.currentTarget.innerHTML;
-  while (resultDiv.firstChild) resultDiv.removeChild(resultDiv.firstChild);
+  const elID = e.currentTarget.id;
+  if (matches[elID]) {
+    input.value = matches[elID].city;
+    clearSelections();
+  }
 }
 
 const selectAnOption = () =>{
   const selections = document.querySelectorAll('ul.results li');
-  selections.forEach(selection => selection.addEventListener('click', handleSelection))
-  ;
+  selections.forEach(selection => selection.addEventListener('click', handleSelection));
 }
 
-const showResult = (result) => {
-  // resultDiv.innerHTML = ''; the line below is faster according to my research
-  while (resultDiv.firstChild) resultDiv.removeChild(resultDiv.firstChild);
-  result.forEach(data => resultDiv.innerHTML += `<li>${data.city}</li>`);
+const displayMatches = (inputValue) => {
+  clearSelections();
+  const regexSearch =  new RegExp(`${inputValue}`, 'gi');
+  let index = -1;
+  const html = matches.map(data => {
+    let { city, state, population } = data;
+    city = city.replace(regexSearch, `<span class='highlight'>${inputValue}</span>`)
+    state = state.replace(regexSearch, `<span class='highlight'>${inputValue}</span>`)
+    ++index;
+    return `
+    <li class='data' id=${index}>
+      <ul>
+        <li><span class='city'>${city}</span><span class='state'>, ${state}</span></li>
+        <li class='population'>${numberWithCommas(population)}</li>
+      </ul>
+    </li>`;
+    console.log(index);
+  }).join('')
+
+  resultDiv.innerHTML = html;
   selectAnOption();
+}
+
+const findMatch = (inputValue, cities) => {
+  const regexSearch =  new RegExp(`${inputValue}`, 'gi');
+  return cities.filter((name) => name.city.match(regexSearch) || name.state.match(regexSearch)).slice(0,10);
 }
 
 const listenToInput = (cities) => {
   input.addEventListener('input', ()=> {
     const inputValue = input.value;
-    const regexSearch =  new RegExp(`^${inputValue}`, 'i');
-    const result = cities.filter ((name) => name.city.match(regexSearch));
-    showResult(result.slice(0,10));
+    if (inputValue === '') {
+      clearSelections();
+    } else {
+      matches = findMatch(inputValue, cities);
+      displayMatches(inputValue);
+    }
   })
 }
 
