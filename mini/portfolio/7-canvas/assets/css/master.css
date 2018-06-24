@@ -1,3 +1,9 @@
 html, body {
   display: grid;
+  height: 100%;
+  margin: 0;
+}
+
+#canvas:active {
+  cursor:cell;
 }
