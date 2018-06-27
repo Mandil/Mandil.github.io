@@ -10,7 +10,20 @@
   <title>HTML Video Player</title>
 </head>
 <body>
-  
+  <div class="video">
+    <video class="player__video viewer" src="https://player.vimeo.com/external/194837908.sd.mp4?s=c350076905b78c67f74d7ee39fdb4fef01d12420&profile_id=164"></video>
+
+    <div class="control">
+      <button type="button" name="play">►</button>
+    </div>
+    <div class="time">
+      <span id="play-time"></span>/<span id="duration"></span>
+    </div>
+    <progress id='progress-bar' min='0' max='100' value='0'>0% played</progress>
+    <progress id='volume-bar' min='0' max='1' value='0'></progress>
+  </div>
+
+
   <script src="assets/js/master.js"></script>
 </body>
 </html>
