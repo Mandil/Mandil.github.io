@@ -1,16 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 body, html {
   justify-content: center;
   display: grid;
 }
 
 body {
-  background: teal;
+  font-family: 'Roboto', sans-serif, 'Helvetica Neue, Helvetica, Arial';
+  background: #e6f2ff;
   margin: 0;
 }
 
 header {
   text-align:center;
-  color: white;
+  color: gray;
 }
 
 .cards {
