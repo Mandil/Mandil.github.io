@@ -1,0 +1,116 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,500,300italic,500italic,700italic,900,300);
+
+html, body {
+  display: grid;
+}
+
+body {
+  background: teal;
+  font-family: "Roboto", 'Helvetica Neue, Helvetica, Arial';
+}
+
+input {
+  outline: none;
+}
+
+.title {
+  margin: auto;
+  padding: 1rem;
+  font-weight: 300;
+  line-height: 2rem;
+  color: white;
+}
+
+.title span {
+  font-style: italic;
+  text-decoration: line-through;
+}
+
+.title i {
+  font-size: 1.6rem;
+}
+
+.main {
+  background: Cornsilk;
+  width: 320px;
+  margin: auto;
+  padding: 1rem;
+  box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+.input input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: brown 1px solid;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  background: transparent;
+}
+
+.to-do {
+  min-height: 2rem;
+  border-bottom: gray 1px solid;
+  display: grid;
+  grid-template-columns: 32px auto;
+}
+
+.to-do input {
+  margin: auto;
+  cursor: pointer;
+}
+
+.to-do .label {
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 2rem;
+  border-left: 1px brown solid;
+  padding-left: 0.7rem
+}
+
+.control {
+  display: none;
+  animation: fadeIn 1s;
+}
+
+.control-button {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+}
+
+.control-button:hover {
+  background: silver;
+  cursor: pointer;
+}
+
+#done {
+  color: green;
+}
+
+#undone {
+  color: blue;
+}
+
+#delete {
+  color: red;
+}
+
+.done {
+  color: gray;
+  font-style: italic;
+  text-decoration: line-through;
+}
+
+.label i {
+  font-size: .6rem;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}

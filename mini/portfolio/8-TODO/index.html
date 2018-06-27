@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel='shortcut icon' type='image/x-icon' href='favicon.png'/>
+  <link rel="stylesheet" href="assets/css/master.css">
+  <title>to-do!</title>
+</head>
+<body>
+  <h1 class="title">
+    <i class="material-icons">check_circle_outline</i>
+    <span>to-do!</span>
+  </h1>
+  <div class="main">
+    <form class="input">
+      <input type="text" placeholder="Add to-do!">
+    </form>
+    <div class="control">
+      <button class="control-button" type="button" id="done"><i class="material-icons">check</i></button>
+      <button class="control-button" type="button" id="undone"><i class="material-icons">check_box_outline_blank</i></button>
+      <button class="control-button" type="button" id="delete"><i class="material-icons">delete</i></button>
+    </div>
+    <form class="todo-list" action="index.html" method="post">
+        <div class="to-do">
+          <input type="checkbox"/>
+          <div class="label">
+            <label>Type new todo in the box above and hit <code>Enter</code></label>
+          </div>
+        </div>
+
+        <div class="to-do">
+          <input type="checkbox"/>
+          <div class="label">
+            <label>Select one of the todos</label>
+          </div>
+        </div>
+
+        <div class="to-do">
+          <input type="checkbox"/>
+          <div class="label">
+            <label>Hold shift and choose another one</label>
+          </div>
+        </div>
+
+        <div class="to-do">
+          <input type="checkbox"/>
+          <div class="label">
+            <label>All between have been choosen 🤓</label>
+          </div>
+        </div>
+
+        <div class="to-do">
+          <input type="checkbox"/>
+          <div class="label">
+            <label>An action bar will appear</label>
+          </div>
+        </div>
+
+        <div class="to-do">
+          <input type="checkbox"/>
+          <div class="label">
+            <label>You can choose from <code>done <i class="material-icons">check_box</i>, undone <i class="material-icons">check_box_outline_blank</i></code> or <code>delete <i class="material-icons">delete</i></code></label>
+          </div>
+
+        </div>
+
+    </form>
+  </div>
+  <script src="assets/js/master.js"></script>
+</body>
+</html>
