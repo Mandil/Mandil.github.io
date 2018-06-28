@@ -3,21 +3,76 @@
 html, body {
   display: grid;
   height: 100vh;
+  text-align: center;
+}
+
+input, button {
+  outline: none;
 }
 
 body {
   background: teal;
+  color: white;
+  font-size: 0.7rem;
   font-family: "Roboto", 'Helvetica Neue, Helvetica, Arial';
 }
 
 .video {
+  margin: 5rem auto;
+}
+
+.control {
+  z-index: 99;
+  display: none;
+  position: relative;
+  top: -50px;
+  background: gray;
+}
+
+.control > * {
+  border: 1px rgba(0,0,0,0.5) solid;
+}
+
+.row {
+  display: grid;
+}
+
+.grid-time {
+  grid-template-columns: 100px auto;
+}
+
+.grid-time p {
+  margin: 5px;
+}
+
+.row > * {
+  grid-row: 1;
+}
+
+button i {
+  color: orange;
+}
+
+.grid-control {
+  grid-template-columns: 40px 40px 24px 40px auto 200px;
+  height: 24px;
+}
+
+.grid-control button {
+  background: none;
+  border: none;
+}
+
+.grid-control label {
   margin: auto;
 }
 
-progress[value].progress-bar  {
-  width: 100%;
-  background: #3259cd;
+.grid-volume {
+  grid-template-columns: 40px auto;
+  height: 24px;
+}
 
-  /* box-sizing: border-box;
-  padding: 2rem; */
+progress {
+  width: 100%;
+  margin: auto;
 }

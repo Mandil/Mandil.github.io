@@ -11,12 +11,18 @@ const toHHMMSS =  (totalSeconds) => {
 
 const progressBar = document.querySelector('#progress-bar');
 const volumeBar = document.querySelector('#volume-bar');
+const speedBar = document.querySelector('#speed-bar');
+const speedLabel = document.querySelector('label[for="speed-bar"]');
+const control = document.querySelector('.control');
+const fastRewindBtn = document.querySelector('#fast_rewind');
+
+const videoSpeeds = [0.25, 0.5, 0.75, 1, 1.25, 1.5, 2];
 
 const playTimeEl = document.querySelector('#play-time');
 const playDurationEl = document.querySelector('#duration');
 
 const video = document.querySelector('video');
-const playButton = document.querySelector('button[name="play"]');
+const playButton = document.querySelector('button.play');
 
 const currentTime = () => {
   playTimeEl.innerHTML = toHHMMSS(video.currentTime);
@@ -39,12 +45,12 @@ video.onloadeddata = ()=>{
 
 const play = () => {
   video.play();
-  playButton.innerHTML = '❚❚';
+  playButton.innerHTML = '<i class="material-icons">pause_circle_filled</i>';
 }
 
 const pause = () => {
   video.pause();
-  playButton.innerHTML = '►';
+  playButton.innerHTML = '<i class="material-icons">play_circle_filled</i>';
 }
 
 const togglePlay = () => {
@@ -62,9 +68,35 @@ volumeBar.addEventListener('click', (e) => {
   volumeBar.value = percent;
 })
 
+video.addEventListener('mouseover', () => {
+  console.log(control.style.display);
+  control.style.display = 'block';
+})
 
+video.addEventListener('mouseout', () => {
+  console.log(control.style.display);
+  setTimeout(() => {
+    if (control.style.display === 'block') {
+      control.style.display = 'none';
+    }
+  }, 5000)
+})
 
+const fastRewind = () => {
+  const currentSpeed = video.playbackRate;
+  if (currentSpeed === 0.25) return;
+  const nextSpeed = videoSpeeds[videoSpeeds.indexOf(currentSpeed) - 1];
+  video.playbackRate = nextSpeed;
+  console.log(nextSpeed);
+}
 
+// speedBar.addEventListener('click', (e) => {
+//   const percent = 2 * e.offsetX / volumeBar.offsetWidth;
+//   video.playbackRate = percent;
+//   speedBar.value = percent;
+//   speedLabel.innerHTML = percent + ' X'
+// })
 
 playButton.addEventListener('click', togglePlay)
 video.addEventListener('click', togglePlay)
+fastRewindBtn.addEventListener('click', fastRewind)
