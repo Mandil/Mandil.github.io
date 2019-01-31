@@ -18,10 +18,10 @@ a {
 body {
   font-family: "Roboto", sans-serif;
   background: #f1f1f1;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   color: #263547;
-  font-size: 0.84rem;
-  line-height: 125%;
+  font-size: 0.8rem;
+  line-height: 120%;
   margin: 0;
 }
 
