@@ -122,3 +122,9 @@ i.fa {
 .memberships li::before {
 	content: "■ ";
 }
+
+.qr-code {
+  display: block;
+  margin: auto 1rem;
+  width: 50%;
+}
